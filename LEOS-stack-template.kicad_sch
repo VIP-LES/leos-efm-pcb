@@ -7359,6 +7359,48 @@
 			)
 		)
 	)
+	(sheet
+		(at 118.11 130.81)
+		(size 111.76 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "24b8f117-111b-4b75-9a84-706095f3b24a")
+		(property "Sheetname" "EFM"
+			(at 118.11 130.0984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "EFM.kicad_sch"
+			(at 118.11 163.1446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "LEOS-stack-template"
+				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
+					(page "2")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
