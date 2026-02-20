@@ -79,6 +79,18 @@
         [
           "silk_edge_clearance|200000000|71220000|90ef5eb2-bbc7-4650-a41f-c2e13f7109e2|044d4a62-4017-4787-9e81-87351c7f3fab",
           ""
+        ],
+        [
+          "silk_overlap|110000000|54089452|90e13d19-4b66-4bf6-aa4a-b3bcf2a34903|92f2cda6-f12b-4042-8176-b1ebd577c5d7",
+          ""
+        ],
+        [
+          "silk_overlap|124806157|53924104|4e1fa2a1-0219-4bcb-917c-83ddafbf02f9|92f2cda6-f12b-4042-8176-b1ebd577c5d7",
+          "no"
+        ],
+        [
+          "starved_thermal|176730000|92025000|735fa11e-aaaa-4083-9bfe-516a6afb37b4|6df4aaf2-83cc-4c83-9fa0-210080c2088f|F.Cu",
+          "No fix possible"
         ]
       ],
       "meta": {
@@ -267,7 +279,24 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "multiple_net_names|1155700|317500|3c2219b7-872c-490a-8434-d6e5f3fa0aa8|fb7bf860-ba6a-4385-bac6-67acdaa68850|/3703ddf2-8141-438d-86a8-1eaec9672d0d/7ed4d75e-ec04-46e8-b742-a9efff4eff8c|/3703ddf2-8141-438d-86a8-1eaec9672d0d/7ed4d75e-ec04-46e8-b742-a9efff4eff8c|/3703ddf2-8141-438d-86a8-1eaec9672d0d/7ed4d75e-ec04-46e8-b742-a9efff4eff8c",
+        ""
+      ],
+      [
+        "multiple_net_names|1193800|317500|3c2219b7-872c-490a-8434-d6e5f3fa0aa8|fb7bf860-ba6a-4385-bac6-67acdaa68850|/3703ddf2-8141-438d-86a8-1eaec9672d0d/7ed4d75e-ec04-46e8-b742-a9efff4eff8c|/3703ddf2-8141-438d-86a8-1eaec9672d0d/7ed4d75e-ec04-46e8-b742-a9efff4eff8c|/3703ddf2-8141-438d-86a8-1eaec9672d0d/7ed4d75e-ec04-46e8-b742-a9efff4eff8c",
+        ""
+      ],
+      [
+        "multiple_net_names|1536700|965200|13ef9cc3-32bc-4bc2-b54f-3cf759a70c75|2a478921-5693-4675-ac8f-6444d691b9f8|/3703ddf2-8141-438d-86a8-1eaec9672d0d/7ed4d75e-ec04-46e8-b742-a9efff4eff8c|/3703ddf2-8141-438d-86a8-1eaec9672d0d/7ed4d75e-ec04-46e8-b742-a9efff4eff8c|/3703ddf2-8141-438d-86a8-1eaec9672d0d/7ed4d75e-ec04-46e8-b742-a9efff4eff8c",
+        ""
+      ],
+      [
+        "power_pin_not_driven|1892300|977900|136890b1-f444-46cc-936c-1818147f223e|00000000-0000-0000-0000-000000000000|/3703ddf2-8141-438d-86a8-1eaec9672d0d/7ed4d75e-ec04-46e8-b742-a9efff4eff8c|/3703ddf2-8141-438d-86a8-1eaec9672d0d/7ed4d75e-ec04-46e8-b742-a9efff4eff8c|",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -492,7 +521,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "LEOS-stack-template.kicad_pro",
+    "filename": "LEOS-efm.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -560,10 +589,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "/home/matthewlyon/Projects/LEOS-stack-template/LEOS-stack-template-rd1/",
+      "plot": "./",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "LEOS-efm.step",
       "svg": "",
       "vrml": ""
     },
@@ -712,6 +741,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "space_save_all_events": true,
@@ -736,6 +773,10 @@
     [
       "341d819d-3d1a-4f8b-94f1-4c6aaa16d806",
       "Connectors"
+    ],
+    [
+      "7ed4d75e-ec04-46e8-b742-a9efff4eff8c",
+      "EFM"
     ]
   ],
   "text_variables": {}

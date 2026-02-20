@@ -1734,10 +1734,6 @@
 		(uuid "376c980d-1cef-4be6-a338-ba0e4f662e8a")
 	)
 	(no_connect
-		(at 124.46 109.22)
-		(uuid "3e822895-4780-4ab2-9634-1f555219dff1")
-	)
-	(no_connect
 		(at 124.46 106.68)
 		(uuid "435e554d-fd1b-4a62-bb77-4cf1a361edc9")
 	)
@@ -1788,10 +1784,6 @@
 	(no_connect
 		(at 124.46 81.28)
 		(uuid "aa1a6fd5-9f50-4a7e-b90a-1d62b6343406")
-	)
-	(no_connect
-		(at 124.46 111.76)
-		(uuid "ae0613b3-5346-4219-9a45-4f3c54b70a22")
 	)
 	(no_connect
 		(at 170.18 116.84)
@@ -1855,6 +1847,36 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 111.76) (xy 124.46 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5254f735-6394-409f-a45f-94bd0a87300b")
+	)
+	(wire
+		(pts
+			(xy 104.14 114.3) (xy 104.14 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69f7b096-a289-4e0e-9dcf-f0a68d95e175")
+	)
+	(wire
+		(pts
+			(xy 95.25 114.3) (xy 104.14 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "788ed13a-d58e-42b6-bd35-42024375976b")
+	)
+	(wire
+		(pts
 			(xy 142.24 57.15) (xy 142.24 66.04)
 		)
 		(stroke
@@ -1885,6 +1907,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 116.84) (xy 106.68 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8db0c9e1-a141-4d2b-8ec5-349f7b7f7d19")
+	)
+	(wire
+		(pts
 			(xy 73.66 100.33) (xy 80.01 100.33)
 		)
 		(stroke
@@ -1912,6 +1944,26 @@
 			(type default)
 		)
 		(uuid "cdacb920-114a-4c40-99d3-c5e06b120872")
+	)
+	(wire
+		(pts
+			(xy 104.14 109.22) (xy 124.46 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d018036e-a669-47de-9996-ea3047f59bab")
+	)
+	(wire
+		(pts
+			(xy 95.25 116.84) (xy 106.68 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1221c05-f390-4406-8777-8997d40e6008")
 	)
 	(wire
 		(pts
@@ -2764,7 +2816,7 @@
 			)
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-efm"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
 					(page "3")
 				)
@@ -2876,9 +2928,71 @@
 			)
 		)
 		(instances
-			(project "LEOS-stack-template"
+			(project "LEOS-efm"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 80.01 111.76)
+		(size 15.24 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7ed4d75e-ec04-46e8-b742-a9efff4eff8c")
+		(property "Sheetname" "EFM"
+			(at 80.01 111.0484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "efm.kicad_sch"
+			(at 80.01 126.3146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SCL" bidirectional
+			(at 95.25 116.84 0)
+			(uuid "10b7f82d-79ef-4dfd-bcb1-6e719ae5e9fc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SDA" bidirectional
+			(at 95.25 114.3 0)
+			(uuid "e428a1be-44ee-47bd-85a2-cf60c1160798")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "LEOS-efm"
+				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
+					(page "4")
 				)
 			)
 		)
