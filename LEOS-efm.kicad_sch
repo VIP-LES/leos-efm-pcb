@@ -1,13 +1,13 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "3703ddf2-8141-438d-86a8-1eaec9672d0d")
 	(paper "A4")
 	(title_block
 		(title "LEOS Microcontroller")
-		(date "2026-02-14")
-		(rev "2")
+		(date "2026-08-04")
+		(rev "3.0")
 		(company "VIP Lightning From the Edge of Space")
 		(comment 1 "Use Pinout.xyz with the Pico 2 for a look at what pins can be configured to.")
 		(comment 2 "We now prefer using sheets to isolate domains.")
@@ -15,145 +15,6 @@
 		(comment 4 "Use this sheet to define connections to your components/circuitry.")
 	)
 	(lib_symbols
-		(symbol "Device:C"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "MCU_Module:RaspberryPi_Pico"
 			(pin_names
 				(offset 0.762)
@@ -161,8 +22,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "A"
 				(at -19.05 35.56 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -172,6 +37,8 @@
 			)
 			(property "Value" "RaspberryPi_Pico"
 				(at 7.62 35.56 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -181,47 +48,57 @@
 			)
 			(property "Footprint" "Module:RaspberryPi_Pico_Common_Unspecified"
 				(at 0 -46.99 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf"
 				(at 0 -49.53 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash; also supports Raspberry Pi Pico 2"
 				(at 0 -52.07 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "RP2350A M33 RISC-V Hazard3 usb"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "RaspberryPi?Pico?Common* RaspberryPi?Pico?SMD*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "RaspberryPi_Pico_0_1"
@@ -298,44 +175,6 @@
 				)
 			)
 			(symbol "RaspberryPi_Pico_1_1"
-				(pin passive line
-					(at -22.86 22.86 0)
-					(length 3.81)
-					(name "RUN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "30"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "~{RESET}" passive line)
-				)
-				(pin passive line
-					(at -22.86 20.32 0)
-					(length 3.81)
-					(name "3V3_EN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "37"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "~{3V3_DISABLE}" passive line)
-				)
 				(pin bidirectional line
 					(at -22.86 15.24 0)
 					(length 3.81)
@@ -381,6 +220,25 @@
 					(alternate "UART0_RX" input line)
 					(alternate "USB_VBUS_DET" passive line)
 					(alternate "~{SPI0_CSn}" bidirectional line)
+				)
+				(pin power_out line
+					(at 0 -35.56 90)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "GND_IN" power_in line)
 				)
 				(pin bidirectional line
 					(at -22.86 10.16 0)
@@ -474,6 +332,25 @@
 					(alternate "USB_VBUS_EN" output line)
 					(alternate "~{SPI0_CSn}" bidirectional line)
 				)
+				(pin passive line
+					(at 0 -35.56 90)
+					(length 3.81)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin bidirectional line
 					(at -22.86 0 0)
 					(length 3.81)
@@ -565,6 +442,25 @@
 					(alternate "UART1_RX" input line)
 					(alternate "USB_OVCUR_DET" input line)
 					(alternate "~{SPI1_CSn}" bidirectional line)
+				)
+				(pin passive line
+					(at 0 -35.56 90)
+					(length 3.81)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 				)
 				(pin bidirectional line
 					(at -22.86 -10.16 0)
@@ -658,6 +554,25 @@
 					(alternate "USB_VBUS_DET" input line)
 					(alternate "~{SPI1_CSn}" bidirectional line)
 				)
+				(pin passive line
+					(at 0 -35.56 90)
+					(length 3.81)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin bidirectional line
 					(at -22.86 -20.32 0)
 					(length 3.81)
@@ -704,195 +619,6 @@
 					(alternate "UART0_RTS" output line)
 					(alternate "USB_OVCUR_DET" input line)
 				)
-				(pin power_in line
-					(at -5.08 38.1 270)
-					(length 3.81)
-					(name "VSYS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "39"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "VSYS_OUT" power_out line)
-				)
-				(pin power_out line
-					(at 0 38.1 270)
-					(length 3.81)
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "40"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "VBUS_IN" power_in line)
-				)
-				(pin passive line
-					(at 0 -35.56 90)
-					(length 3.81)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -35.56 90)
-					(length 3.81)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -35.56 90)
-					(length 3.81)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -35.56 90)
-					(length 3.81)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "28"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 0 -35.56 90)
-					(length 3.81)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "GND_IN" power_in line)
-				)
-				(pin passive line
-					(at 0 -35.56 90)
-					(length 3.81)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "38"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -35.56 90)
-					(length 3.81)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 5.08 38.1 270)
-					(length 3.81)
-					(name "3V3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "36"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin bidirectional line
 					(at 22.86 12.7 180)
 					(length 3.81)
@@ -938,6 +664,25 @@
 					(alternate "UART0_RX" input line)
 					(alternate "USB_VBUS_EN" output line)
 					(alternate "~{SPI0_CSn}" bidirectional line)
+				)
+				(pin passive line
+					(at 0 -35.56 90)
+					(length 3.81)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 				)
 				(pin bidirectional line
 					(at 22.86 7.62 180)
@@ -1033,6 +778,25 @@
 					(alternate "USB_OVCUR_DET" input line)
 					(alternate "~{SPI0_CSn}" bidirectional line)
 				)
+				(pin passive line
+					(at 0 -35.56 90)
+					(length 3.81)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin bidirectional line
 					(at 22.86 -2.54 180)
 					(length 3.81)
@@ -1057,23 +821,24 @@
 					(alternate "UART1_CTS" input line)
 					(alternate "USB_VBUS_DET" input line)
 				)
-				(pin power_in line
-					(at 22.86 -7.62 180)
+				(pin passive line
+					(at -22.86 22.86 0)
 					(length 3.81)
-					(name "ADC_VREF"
+					(name "RUN"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "35"
+					(number "30"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
+					(alternate "~{RESET}" passive line)
 				)
 				(pin bidirectional line
 					(at 22.86 -12.7 180)
@@ -1125,6 +890,25 @@
 					(alternate "UART1_RTS" output line)
 					(alternate "USB_OVCUR_DET" input line)
 				)
+				(pin power_out line
+					(at 22.86 -22.86 180)
+					(length 3.81)
+					(name "AGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "GND" passive line)
+				)
 				(pin bidirectional line
 					(at 22.86 -17.78 180)
 					(length 3.81)
@@ -1150,30 +934,123 @@
 					(alternate "UART0_TX" output line)
 					(alternate "USB_VBUS_DET" input line)
 				)
-				(pin power_out line
-					(at 22.86 -22.86 180)
+				(pin power_in line
+					(at 22.86 -7.62 180)
 					(length 3.81)
-					(name "AGND"
+					(name "ADC_VREF"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "33"
+					(number "35"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(alternate "GND" passive line)
+				)
+				(pin power_out line
+					(at 5.08 38.1 270)
+					(length 3.81)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "36"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -22.86 20.32 0)
+					(length 3.81)
+					(name "3V3_EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "37"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "~{3V3_DISABLE}" passive line)
+				)
+				(pin passive line
+					(at 0 -35.56 90)
+					(length 3.81)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 38.1 270)
+					(length 3.81)
+					(name "VSYS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "VSYS_OUT" power_out line)
+				)
+				(pin power_out line
+					(at 0 38.1 270)
+					(length 3.81)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "40"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "VBUS_IN" power_in line)
 				)
 			)
 			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -1184,17 +1061,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "+5V"
 				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1203,38 +1086,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"+5V\""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "+5V_0_1"
@@ -1279,7 +1170,7 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1298,7 +1189,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "power:GND"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -1309,17 +1200,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1328,38 +1225,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_0_1"
@@ -1380,7 +1285,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1399,7 +1304,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "power:VDD"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -1410,17 +1315,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "VDD"
 				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1429,38 +1340,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"VDD\""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "VDD_0_1"
@@ -1505,7 +1424,7 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1534,7 +1453,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 09aa2c12-f7ac-4a29-b154-95da892e4ff2)
+		(uuid "09aa2c12-f7ac-4a29-b154-95da892e4ff2")
 	)
 	(rectangle
 		(start 128.27 113.03)
@@ -1546,7 +1465,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 375d7af8-2b92-4c51-ba88-f5c10c117bd1)
+		(uuid "375d7af8-2b92-4c51-ba88-f5c10c117bd1")
 	)
 	(rectangle
 		(start 128.27 107.95)
@@ -1558,7 +1477,19 @@
 		(fill
 			(type none)
 		)
-		(uuid 37726217-d42a-4510-a9ac-354a76660e35)
+		(uuid "37726217-d42a-4510-a9ac-354a76660e35")
+	)
+	(rectangle
+		(start 178.816 61.595)
+		(end 279.146 150.495)
+		(stroke
+			(width 0.25)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b8cbbb1b-f183-4bac-a8b7-3027a9d80ce7")
 	)
 	(rectangle
 		(start 128.27 87.63)
@@ -1570,7 +1501,20 @@
 		(fill
 			(type none)
 		)
-		(uuid ccee0550-8171-4e02-ad8f-0e41a0381aa7)
+		(uuid "ccee0550-8171-4e02-ad8f-0e41a0381aa7")
+	)
+	(text "This is the schematic for a circuit board module used in the LEOS Stack.\nOther than the standard CAN networking chips and Raspberry Pi Pico,\nthis is your blank slate for creating any application designs."
+		(exclude_from_sim no)
+		(at 179.959 66.802 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "355d3ce0-00c9-4fa0-9425-22a0887947a6")
 	)
 	(text "SPI1"
 		(exclude_from_sim no)
@@ -1586,10 +1530,10 @@
 	)
 	(text "Raspberry Pi Pico"
 		(exclude_from_sim no)
-		(at 147.066 45.466 0)
+		(at 147.32 49.276 0)
 		(effects
 			(font
-				(size 2.54 2.54)
+				(size 3 3)
 				(thickness 0.508)
 				(bold yes)
 			)
@@ -1606,6 +1550,16 @@
 			(justify left)
 		)
 		(uuid "45278158-7081-4a0c-b47c-c61b333e0086")
+	)
+	(text "Have Fun! Delete this box once you start designing."
+		(exclude_from_sim no)
+		(at 207.645 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "47bc0f6d-30a2-4ccb-aaf3-a06c39164b99")
 	)
 	(text "Since CANbus is very high \nthroughput, avoid using SPI0 for\nany other devices."
 		(exclude_from_sim no)
@@ -1650,6 +1604,17 @@
 			(justify left)
 		)
 		(uuid "a1aafb31-e649-49c2-8ff8-6c542107781b")
+	)
+	(text "When authoring new schematics, remember these key points:\n1. Ensure your page information is up to date.\n	- keep the revision number, page title, and supporting text up\n	to date with the design. This document should be self-explanatory as\n	often as possible.\n	- Delete the help text in the root sheet.\n2. Commit your work into GitHub \n	- Make incremental changes to the schematic and layout,\n	but ensure that any commit is not a fragmented mess of changes.\n	- Use descriptive commit messages that convey what was updated.\n	Longer descriptions of changes or issues can be included as a 2nd/3rd\n	line in Kicad/Git commits. Don't just say \"updated layout\"...\n	- Avoid committing generated files, junk files, or gerbers. If a file\n	can be generated from the existing schematic and kicad sources, it does\n	not need to be version controlled.\n3. Ensure each symbol and footprint matches what you have selected for your\n	Bill of Materials (table looking button in top bar).\n	- Review, Review, Review!\n	Small discrepancies, pin requirements, or sourcing troubles can set your team\n	back weeks. Always ensure your planned design is able to be ordered and\n	follows the given recommendations and application implementations.\n	- Follow this project's structure of documenting the Manufacturer,\n	MPN (Manufacturer's Part Number) and Digikey columns for each part.\n	These items are conveniently listed next to the image of a part on\n	Digikey.com.\n4. Use realistic part sizes. \n	- Dont use a 0201 package when you could use 1206. While our design\n	does use surface mount soldering, its best to use as large of a size\n	as you are comfortable soldering. SOIC, 0805, 1206, SOT, and TSSOP\n	are pretty easy to reflow and hand-place.\n	"
+		(exclude_from_sim no)
+		(at 180.467 109.982 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left)
+		)
+		(uuid "aaac9310-9ada-47e6-aed7-64c4c927bf0c")
 	)
 	(text "UART0"
 		(exclude_from_sim no)
@@ -1697,18 +1662,6 @@
 		)
 		(uuid "f9629eaa-84f4-4d44-8243-599bae7943cc")
 	)
-	(junction
-		(at 161.29 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2ad3a0e5-ae99-4ea8-a17f-2741e4efbf15")
-	)
-	(junction
-		(at 142.24 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "de4348b1-f252-489d-aeec-a2a7ab455a01")
-	)
 	(no_connect
 		(at 147.32 66.04)
 		(uuid "0104658e-3710-4b4c-add1-5174fabafc25")
@@ -1732,6 +1685,10 @@
 	(no_connect
 		(at 124.46 83.82)
 		(uuid "376c980d-1cef-4be6-a338-ba0e4f662e8a")
+	)
+	(no_connect
+		(at 124.46 109.22)
+		(uuid "3e822895-4780-4ab2-9634-1f555219dff1")
 	)
 	(no_connect
 		(at 124.46 106.68)
@@ -1786,6 +1743,10 @@
 		(uuid "aa1a6fd5-9f50-4a7e-b90a-1d62b6343406")
 	)
 	(no_connect
+		(at 124.46 111.76)
+		(uuid "ae0613b3-5346-4219-9a45-4f3c54b70a22")
+	)
+	(no_connect
 		(at 170.18 116.84)
 		(uuid "bb1ac86e-b1c2-4071-96c7-f214859b39d7")
 	)
@@ -1827,16 +1788,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 57.15) (xy 142.24 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48b5a493-0b63-4041-8bd2-02c02dc2cd27")
-	)
-	(wire
-		(pts
 			(xy 95.25 96.52) (xy 124.46 96.52)
 		)
 		(stroke
@@ -1847,37 +1798,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 111.76) (xy 124.46 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5254f735-6394-409f-a45f-94bd0a87300b")
-	)
-	(wire
-		(pts
-			(xy 104.14 114.3) (xy 104.14 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69f7b096-a289-4e0e-9dcf-f0a68d95e175")
-	)
-	(wire
-		(pts
-			(xy 95.25 114.3) (xy 104.14 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "788ed13a-d58e-42b6-bd35-42024375976b")
-	)
-	(wire
-		(pts
-			(xy 142.24 57.15) (xy 142.24 66.04)
+			(xy 142.24 62.23) (xy 142.24 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1897,23 +1818,13 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 66.04) (xy 152.4 57.15)
+			(xy 152.4 66.04) (xy 152.4 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8bb94604-acf2-423a-a66e-875f89d52a16")
-	)
-	(wire
-		(pts
-			(xy 106.68 116.84) (xy 106.68 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8db0c9e1-a141-4d2b-8ec5-349f7b7f7d19")
 	)
 	(wire
 		(pts
@@ -1937,46 +1848,6 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 57.15) (xy 161.29 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cdacb920-114a-4c40-99d3-c5e06b120872")
-	)
-	(wire
-		(pts
-			(xy 104.14 109.22) (xy 124.46 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d018036e-a669-47de-9996-ea3047f59bab")
-	)
-	(wire
-		(pts
-			(xy 95.25 116.84) (xy 106.68 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d1221c05-f390-4406-8777-8997d40e6008")
-	)
-	(wire
-		(pts
-			(xy 130.81 64.77) (xy 130.81 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f41db6eb-f637-4d19-94ed-b53077fd80b9")
-	)
-	(wire
-		(pts
 			(xy 95.25 93.98) (xy 124.46 93.98)
 		)
 		(stroke
@@ -1989,13 +1860,17 @@
 		(lib_id "MCU_Module:RaspberryPi_Pico")
 		(at 147.32 104.14 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "1f4acb75-1d35-4cb0-9bc7-f7c8c5d3271a")
 		(property "Reference" "A1"
 			(at 128.778 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2005,6 +1880,8 @@
 		)
 		(property "Value" "RaspberryPi Pico"
 			(at 128.778 139.192 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2012,67 +1889,81 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Module:RaspberryPi_Pico_Common_THT"
+		(property "Footprint" "Module:RaspberryPi_Pico_Common_Unspecified"
 			(at 147.32 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf"
 			(at 147.32 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Pimoroni Pico Plus 2"
 			(at 147.32 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digikey" "1778-PIM724-ND"
 			(at 147.32 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "MPN" "PIM724"
 			(at 147.32 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" "Pimoroni"
 			(at 147.32 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" ""
 			(at 147.32 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "38"
@@ -2196,7 +2087,7 @@
 			(uuid "8c0985e3-7f28-4375-bd2f-5d95e88f0969")
 		)
 		(instances
-			(project ""
+			(project "LEOS-stack-template"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
 					(reference "A1")
 					(unit 1)
@@ -2206,91 +2097,31 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 130.81 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3b77c49a-e850-427c-940d-876241c32642")
-		(property "Reference" "#PWR019"
-			(at 130.81 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 130.81 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 130.81 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cdef0f15-0074-4883-83e1-b5e0fcd2b185")
-		)
-		(instances
-			(project ""
-				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
-					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 147.32 139.7 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "54bf3eb0-3421-4d07-8631-fa58cdaf70af")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR02"
 			(at 147.32 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 147.32 144.78 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2299,217 +2130,44 @@
 		)
 		(property "Footprint" ""
 			(at 147.32 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 147.32 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 147.32 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "f654926a-420d-4b6d-a95d-34ccbdded4c7")
 		)
 		(instances
-			(project ""
+			(project "LEOS-stack-template"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
-					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 161.29 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8c6e62e0-4e6b-4e96-bc89-8a6a074ab831")
-		(property "Reference" "#PWR021"
-			(at 161.29 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 161.29 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 161.29 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 161.29 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 161.29 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1977edca-46d4-4390-89ad-b37efee048a0")
-		)
-		(instances
-			(project ""
-				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
-					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 161.29 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8dd0b4e3-6d63-4c8d-8417-b14adb9be408")
-		(property "Reference" "C11"
-			(at 161.798 58.928 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 161.798 63.246 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 162.2552 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 161.29 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10U 16V X7R 0805"
-			(at 161.29 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey" "1276-2872-1-ND"
-			(at 161.29 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 161.29 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CL21B106KOQNNNE"
-			(at 161.29 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C95841"
-			(at 161.29 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 161.29 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b41e2bb0-ee22-495c-b736-57de245ac0f5")
-		)
-		(pin "1"
-			(uuid "cee505b4-e4b3-44a5-bee4-9a0e20031f54")
-		)
-		(instances
-			(project "LEOS-stack-template-rd1"
-				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
-					(reference "C11")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -2517,25 +2175,31 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 142.24 57.15 0)
+		(at 142.24 62.23 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c525191-358a-48e5-ac98-7b54e45d6083")
-		(property "Reference" "#PWR020"
-			(at 142.24 60.96 0)
+		(property "Reference" "#PWR01"
+			(at 142.24 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+5V"
-			(at 142.24 52.07 0)
+			(at 142.24 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2543,39 +2207,45 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 57.15 0)
+			(at 142.24 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 57.15 0)
+			(at 142.24 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 142.24 57.15 0)
+			(at 142.24 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "f1490e40-6671-45c3-9e15-00a98fb902a4")
 		)
 		(instances
-			(project ""
+			(project "LEOS-stack-template"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
-					(reference "#PWR020")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -2583,25 +2253,31 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 161.29 57.15 0)
+		(at 152.4 62.23 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c82de2de-6c37-4d8e-ac83-79d273a51037")
-		(property "Reference" "#PWR022"
-			(at 161.29 60.96 0)
+		(property "Reference" "#PWR03"
+			(at 152.4 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "VDD"
-			(at 161.29 52.07 0)
+			(at 152.4 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2609,153 +2285,45 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 161.29 57.15 0)
+			(at 152.4 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 161.29 57.15 0)
+			(at 152.4 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 161.29 57.15 0)
+			(at 152.4 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "42d36707-f949-4b3a-acf0-4cce4c734fae")
 		)
 		(instances
-			(project ""
+			(project "LEOS-stack-template"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 130.81 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f9d288ce-8277-49ac-92f5-ec4bd3d4bdb2")
-		(property "Reference" "C10"
-			(at 131.318 58.928 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1u"
-			(at 131.318 63.246 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 131.7752 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 130.81 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1U 50V X7R 0603"
-			(at 130.81 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey" "1276-CL10B104KB8NNNLCT-ND"
-			(at 130.81 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C913912"
-			(at 130.81 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CL10B104KB8NNNL"
-			(at 130.81 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 130.81 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 130.81 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "88a40c04-e08b-4b50-9b0f-036134214875")
-		)
-		(pin "1"
-			(uuid "2b639ad3-df8d-41fe-8ef2-e6a33e8c5170")
-		)
-		(instances
-			(project "LEOS-stack-template-rd1"
-				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
-					(reference "C10")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -2774,11 +2342,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "341d819d-3d1a-4f8b-94f1-4c6aaa16d806")
 		(property "Sheetname" "Connectors"
 			(at 52.07 91.9984 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2788,6 +2358,8 @@
 		)
 		(property "Sheetfile" "connectors.kicad_sch"
 			(at 52.07 105.9946 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2816,7 +2388,7 @@
 			)
 		)
 		(instances
-			(project "LEOS-efm"
+			(project "LEOS-stack-template"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
 					(page "3")
 				)
@@ -2836,11 +2408,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "5dc8edec-1b34-44a9-a38e-40874919c30b")
 		(property "Sheetname" "CANbus"
 			(at 80.01 91.9984 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2850,6 +2424,8 @@
 		)
 		(property "Sheetfile" "canbus.kicad_sch"
 			(at 80.01 105.9946 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2928,71 +2504,9 @@
 			)
 		)
 		(instances
-			(project "LEOS-efm"
+			(project "LEOS-stack-template"
 				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
 					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 80.01 111.76)
-		(size 15.24 13.97)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "7ed4d75e-ec04-46e8-b742-a9efff4eff8c")
-		(property "Sheetname" "EFM"
-			(at 80.01 111.0484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "efm.kicad_sch"
-			(at 80.01 126.3146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "SCL" bidirectional
-			(at 95.25 116.84 0)
-			(uuid "10b7f82d-79ef-4dfd-bcb1-6e719ae5e9fc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "SDA" bidirectional
-			(at 95.25 114.3 0)
-			(uuid "e428a1be-44ee-47bd-85a2-cf60c1160798")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "LEOS-efm"
-				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d"
-					(page "4")
 				)
 			)
 		)
