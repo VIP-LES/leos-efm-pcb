@@ -6,8 +6,8 @@
 	(paper "A5")
 	(title_block
 		(title "LEOS CANbus")
-		(date "2026-08-04")
-		(rev "3.0")
+		(date "2026-10-13")
+		(rev "2.0")
 		(company "VIP Lightning From the Edge of Space")
 	)
 	(lib_symbols
@@ -347,7 +347,7 @@
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 0 0)
+				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -397,7 +397,7 @@
 						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -2636,7 +2636,7 @@
 				)
 			)
 		)
-		(property "Description" "10pF 50V C0G/NP0 0805"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 106.68 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -3679,7 +3679,7 @@
 				)
 			)
 		)
-		(property "Description" "10pF 50V C0G/NP0 0805"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 106.68 80.01 0)
 			(hide yes)
 			(show_name no)

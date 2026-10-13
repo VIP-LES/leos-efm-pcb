@@ -6,8 +6,8 @@
 	(paper "A5")
 	(title_block
 		(title "LEOS Connectors")
-		(date "2026-08-04")
-		(rev "3.0")
+		(date "2026-10-13")
+		(rev "2.0")
 		(company "VIP Lightning From the Edge of Space")
 	)
 	(lib_symbols
