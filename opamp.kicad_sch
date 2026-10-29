@@ -1008,6 +1008,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 81.28) (xy 69.85 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6eae21f4-70c8-4fb5-a618-9730951f941e")
+	)
+	(wire
+		(pts
 			(xy 105.41 68.58) (xy 105.41 83.82)
 		)
 		(stroke
@@ -1048,7 +1058,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 81.28) (xy 69.85 81.28)
+			(xy 52.07 81.28) (xy 59.69 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1098,7 +1108,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 48.26) (xy 69.85 48.26)
+			(xy 52.07 48.26) (xy 59.69 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1125,6 +1135,16 @@
 			(type default)
 		)
 		(uuid "c9b5d55e-e4c4-46c1-9f13-362fafd86067")
+	)
+	(wire
+		(pts
+			(xy 67.31 48.26) (xy 69.85 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1ca3be3-5732-4344-8cac-fafa1f81a6b6")
 	)
 	(wire
 		(pts
@@ -1211,7 +1231,7 @@
 	)
 	(hierarchical_label "SENSE"
 		(shape input)
-		(at 62.23 48.26 180)
+		(at 52.07 48.26 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1222,7 +1242,7 @@
 	)
 	(hierarchical_label "REF"
 		(shape input)
-		(at 62.23 81.28 180)
+		(at 52.07 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1241,6 +1261,90 @@
 			(justify right)
 		)
 		(uuid "ed80bdef-1ae5-49b1-ab31-c847c76385f0")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 63.5 81.28 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0294f605-c16d-4561-81d0-9ec176f4c634")
+		(property "Reference" "C17"
+			(at 63.5 73.66 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3u"
+			(at 63.5 76.2 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 67.31 80.3148 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 63.5 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "66916da3-20f2-4494-a21e-646eb1db4995")
+		)
+		(pin "2"
+			(uuid "beb3e923-55ed-45d9-9984-89b76f74d625")
+		)
+		(instances
+			(project "LEOS-efm"
+				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/63365fd5-9ed8-4ace-be7f-754e14efcbff"
+					(reference "C17")
+					(unit 1)
+				)
+				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/fd5efc03-4429-4730-bf45-7cf0c6a8bd6e"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -1264,7 +1368,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "1M"
 			(at 95.25 30.48 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1409,6 +1513,90 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 63.5 48.26 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2f30a092-6cf1-4f51-8461-e3aea28dd0f7")
+		(property "Reference" "C11"
+			(at 63.5 40.64 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3u"
+			(at 63.5 43.18 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 67.31 47.2948 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 63.5 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "59e2c1b6-5a1d-434c-9012-d3236480da4f")
+		)
+		(pin "2"
+			(uuid "a169ea47-9eea-47db-8d8d-2d74807308d2")
+		)
+		(instances
+			(project "LEOS-efm"
+				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/63365fd5-9ed8-4ace-be7f-754e14efcbff"
+					(reference "C11")
+					(unit 1)
+				)
+				(path "/3703ddf2-8141-438d-86a8-1eaec9672d0d/fd5efc03-4429-4730-bf45-7cf0c6a8bd6e"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 154.94 53.34 0)
 		(unit 1)
@@ -1512,7 +1700,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 73.66 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2381,7 +2569,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 73.66 77.47 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2465,7 +2653,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "1M"
 			(at 95.25 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
